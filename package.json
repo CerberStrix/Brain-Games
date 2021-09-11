@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/CerberStrix/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/CerberStrix/frontend-project-lvl1/actions)",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CerberStrix/frontend-project-lvl1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CerberStrix/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/CerberStrix/frontend-project-lvl1#readme"
+}
