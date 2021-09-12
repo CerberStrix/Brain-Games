@@ -1,4 +1,4 @@
-name: Linter
+name: Linter-check
 on: push
 jobs:
   # Set the job key. The key is displayed as the job name
