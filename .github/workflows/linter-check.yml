@@ -1,19 +1,23 @@
 name: Linter
 on: push
 jobs:
-  my-job:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  make-lint:
+    # Name the Job
+    name: Runs super-linter
+    # Set the type of machine to run on
     runs-on: ubuntu-latest
+
     steps:
-    # Check-out repository under GitHub workspace
-        # https://github.com/actions/checkout
-      - uses: actions/checkout@v2
-        # Step's name
-      - name: Use Node.js ${{ matrix.node-version }}
-        # Configures the node version used on GitHub-hosted runners
-        # https://github.com/actions/setup-node
-        uses: actions/setup-node@v1
-        # The Node.js version to configure
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: run linter
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # installing dependencies
+      - name: Install Dependencies
+        run: make install
+
+      # Runs the Linter action
+      - name: Run super-linter
         run: make lint
