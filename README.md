@@ -1,4 +1,4 @@
-<script id="asciicast-GhzKtRYi2l5pqxHan31gC6X7m" src="https://asciinema.org/a/GhzKtRYi2l5pqxHan31gC6X7m.js" async></script>
+[![asciicast](https://asciinema.org/a/GhzKtRYi2l5pqxHan31gC6X7m.svg)](https://asciinema.org/a/GhzKtRYi2l5pqxHan31gC6X7m)
 
 
 
