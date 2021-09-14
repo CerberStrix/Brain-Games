@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* eslint-disable import/named */
+/* eslint-disable no-console */
 /* eslint-disable import/extensions */
 
 import { greeting } from '../src/cli.js';
