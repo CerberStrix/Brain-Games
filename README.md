@@ -1,3 +1,8 @@
+<script id="asciicast-GhzKtRYi2l5pqxHan31gC6X7m" src="https://asciinema.org/a/GhzKtRYi2l5pqxHan31gC6X7m.js" async></script>
+
+
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/CerberStrix/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/CerberStrix/frontend-project-lvl1/actions)
 
