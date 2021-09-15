@@ -1,11 +1,8 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
-import { userName } from './cli.js';
 
-export const isEvenLogic = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
+const isEvenLogic = (name) => {
   let i = 0;
   while (i < 3) {
     const randomNumber = Math.floor(Math.random() * 100);
@@ -18,8 +15,10 @@ export const isEvenLogic = () => {
       console.log('Correct!');
       i += 1;
     } else {
-      return `${userAnswer} is wrong answer ;(. Correct answer was ${isEven}.\nLet's try again!`;
+      return `${userAnswer} is wrong answer ;(. Correct answer was ${isEven}\nLet's try again!`;
     }
   }
-  return `Congratulations, ${userName}!`;
+  return `Congratulations, ${name}!`;
 };
+
+export default isEvenLogic;
