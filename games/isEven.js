@@ -2,7 +2,7 @@
 /* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
 
-const isEvenLogic = (name) => {
+const isEvenLogic = () => {
   let i = 0;
   while (i < 3) {
     const randomNumber = Math.floor(Math.random() * 100);
@@ -11,14 +11,15 @@ const isEvenLogic = (name) => {
     console.log(`Question: ${randomNumber}`);
 
     const userAnswer = readlineSync.question('Your answer: ');
+    const result = [isEven, userAnswer];
     if (userAnswer === isEven) {
       console.log('Correct!');
       i += 1;
     } else {
-      return `${userAnswer} is wrong answer ;(. Correct answer was ${isEven}\nLet's try again, ${name}!`;
+      return result;
     }
   }
-  return `Congratulations, ${name}!`;
+  return true;
 };
 
 export default isEvenLogic;

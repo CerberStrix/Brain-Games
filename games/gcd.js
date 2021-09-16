@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const gcd = (name) => {
+const gcd = () => {
   let i = 0;
   while (i < 3) {
     const randomOperand1 = Math.floor(Math.random() * 100);
@@ -16,19 +16,20 @@ const gcd = (name) => {
       }
       return a + b;
     };
-    const result = gcdLogic(randomOperand1, randomOperand2);
+    const correctResult = gcdLogic(randomOperand1, randomOperand2);
 
     console.log(`Question: ${randomOperand1} ${randomOperand2}`);
 
     const userAnswer = readlineSync.question('Your answer: ');
+    const result = [correctResult, userAnswer];
     if (Number(userAnswer) === result) {
       console.log('Correct!');
       i += 1;
     } else {
-      return `'${userAnswer}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${name}!`;
+      return result;
     }
   }
-  return `Congratulations, ${name}!`;
+  return true;
 };
 
 export default gcd;

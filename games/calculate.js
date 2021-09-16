@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const calcLogic = (name) => {
+const calcLogic = () => {
   let i = 0;
   while (i < 3) {
     const randomOperand1 = Math.floor(Math.random() * 100);
@@ -29,14 +29,15 @@ const calcLogic = (name) => {
     }
 
     const userAnswer = readlineSync.question('Your answer: ');
+    const result = [answer, userAnswer];
     if (Number(userAnswer) === answer) {
       console.log('Correct!');
       i += 1;
     } else {
-      return `${userAnswer} is wrong answer ;(. Correct answer was ${answer}\nLet's try again, ${name}!`;
+      return result;
     }
   }
-  return `Congratulations, ${name}!`;
+  return true;
 };
 
 export default calcLogic;
