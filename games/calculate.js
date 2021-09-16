@@ -33,7 +33,7 @@ const calcLogic = (name) => {
       console.log('Correct!');
       i += 1;
     } else {
-      return `${userAnswer} is wrong answer ;(. Correct answer was ${answer}\nLet's try again!`;
+      return `${userAnswer} is wrong answer ;(. Correct answer was ${answer}\nLet's try again, ${name}!`;
     }
   }
   return `Congratulations, ${name}!`;

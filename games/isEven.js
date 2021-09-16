@@ -15,7 +15,7 @@ const isEvenLogic = (name) => {
       console.log('Correct!');
       i += 1;
     } else {
-      return `${userAnswer} is wrong answer ;(. Correct answer was ${isEven}\nLet's try again!`;
+      return `${userAnswer} is wrong answer ;(. Correct answer was ${isEven}\nLet's try again, ${name}!`;
     }
   }
   return `Congratulations, ${name}!`;
