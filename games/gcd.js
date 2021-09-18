@@ -7,11 +7,13 @@ const gcd = () => {
     const randomOperand2 = Math.floor(Math.random() * 100);
 
     const gcdLogic = (a, b) => {
-      while (a !== 0 && b !== 0) {
-        if (a > b) {
-          a %= b;
+      let item1 = a;
+      let item2 = b;
+      while (item1 !== 0 && item2 !== 0) {
+        if (item1 > item2) {
+          item1 %= item2;
         } else {
-          b %= a;
+          item2 %= item1;
         }
       }
       return a + b;
