@@ -24,7 +24,7 @@ const gcd = () => {
 
     const userAnswer = readlineSync.question('Your answer: ');
     const result = [correctResult, userAnswer];
-    if (Number(userAnswer) === result) {
+    if (Number(userAnswer) === correctResult) {
       console.log('Correct!');
       i += 1;
     } else {
