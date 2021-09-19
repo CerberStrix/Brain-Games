@@ -16,7 +16,7 @@ const gcd = () => {
           item2 %= item1;
         }
       }
-      return a + b;
+      return item1 + item2;
     };
     const correctResult = gcdLogic(randomOperand1, randomOperand2);
 
