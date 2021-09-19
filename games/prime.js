@@ -3,10 +3,10 @@ import readlineSync from 'readline-sync';
 const primeLogic = () => {
   let i = 0;
   while (i < 3) {
-    const randomNumber = Math.floor(Math.random() * 100);
+    const randomNumber = Math.floor(Math.random() * 1000);
     let isPrime = 'yes';
     for (let j = 2; j <= randomNumber / 2; j += 1) {
-      if (randomNumber < 2 || randomNumber % i === 0) {
+      if (randomNumber < 2 || randomNumber % j === 0) {
         isPrime = 'no';
       }
     }
