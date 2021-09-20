@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 /* eslint-disable import/extensions */
-import { primeGame } from '../src/index.js';
+import { termsOfPrimeGame } from '../src/gamesComponents.js';
+import generalLogic from '../src/index.js';
+import primeLogic from '../games/gcd.js';
 
-console.log(primeGame());
+console.log(generalLogic(termsOfPrimeGame, primeLogic));
