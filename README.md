@@ -6,4 +6,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/278b54b6d1e73f902124/maintainability)](https://codeclimate.com/github/CerberStrix/frontend-project-lvl1/maintainability)
 
 
-[![asciicast](https://asciinema.org/a/436864.svg)](https://asciinema.org/a/436864)
+[![asciicast](https://asciinema.org/a/lePhcde3u18qffarvgf1DMRMc.svg)](https://asciinema.org/a/lePhcde3u18qffarvgf1DMRMc)
