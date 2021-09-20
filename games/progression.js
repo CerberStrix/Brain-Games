@@ -1,6 +1,6 @@
 const progressionLogic = () => {
   const digitsColl = [];
-  const progressionLength = Math.floor(Math.random() * (5) + 5);
+  const progressionLength = Math.floor(Math.random() * (5) + 6);
   const progressionStep = Math.floor(Math.random() * 10 + 1);
   let startOfProgression = Math.floor(Math.random() * 100);
   for (let j = 0; j < progressionLength; j += 1) {
