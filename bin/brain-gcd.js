@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 /* eslint-disable import/extensions */
-import { termsOfGcdGame } from '../src/gamesComponents.js';
-import generalLogic from '../src/index.js';
-import gcdLogic from '../games/gcd.js';
+import getGeneralLogic from '../src/index.js';
+import { termsOfGcdGame, getGcdLogic } from '../src/games/gcd.js';
 
-console.log(generalLogic(termsOfGcdGame, gcdLogic));
+console.log(getGeneralLogic(termsOfGcdGame, getGcdLogic));

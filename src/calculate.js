@@ -1,4 +1,8 @@
-const calcLogic = () => {
+import readlineSync from 'readline-sync';
+
+export const termsOfCalcGame = 'What is the result of the expression?';
+
+export const getCalcLogic = () => {
   const randomOperand1 = Math.floor(Math.random() * 100);
   const randomOperand2 = Math.floor(Math.random() * 100);
 
@@ -8,6 +12,8 @@ const calcLogic = () => {
 
   const computationForConsol = `${randomOperand1} ${randomOperator} ${randomOperand2}`;
   console.log(`Question: ${computationForConsol}`);
+
+  const userAnswer = readlineSync.question();
 
   let result;
   switch (randomOperator) {
@@ -22,7 +28,9 @@ const calcLogic = () => {
       break;
     default:
   }
-  return result;
-};
+  const results = [];
+  results.push(userAnswer);
+  results.push(String(result));
 
-export default calcLogic;
+  return results;
+};

@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 /* eslint-disable import/extensions */
-import { termsOfCalcGame } from '../src/gamesComponents.js';
-import generalLogic from '../src/index.js';
-import calcLogic from '../games/calculate.js';
+import getGeneralLogic from '../src/index.js';
+import { termsOfCalcGame, getCalcLogic } from '../src/games/calculate.js';
 
-console.log(generalLogic(termsOfCalcGame, calcLogic));
+console.log(getGeneralLogic(termsOfCalcGame, getCalcLogic));

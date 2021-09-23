@@ -1,4 +1,8 @@
-const progressionLogic = () => {
+import readlineSync from 'readline-sync';
+
+export const termsOfProgressionGame = 'What number is missing in the progression?';
+
+export const getProgressionLogic = () => {
   const digitsColl = [];
   const progressionLength = Math.floor(Math.random() * (5) + 6);
   const progressionStep = Math.floor(Math.random() * 10 + 1);
@@ -9,12 +13,15 @@ const progressionLogic = () => {
   }
 
   const randomIndex = Math.floor(Math.random() * (progressionLength - 1));
-  const digitForQuestion = digitsColl[randomIndex];
+  const result = digitsColl[randomIndex];
   digitsColl[randomIndex] = '..';
 
   console.log(`Question: ${digitsColl.join(' ')}`);
+  const userAnswer = readlineSync.question();
 
-  return digitForQuestion;
+  const results = [];
+  results.push(userAnswer);
+  results.push(String(result));
+
+  return results;
 };
-
-export default progressionLogic;

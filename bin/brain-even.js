@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 /* eslint-disable import/extensions */
-import { termsOfIsEvenGame } from '../src/gamesComponents.js';
-import generalLogic from '../src/index.js';
-import isEvenLogic from '../games/isEven.js';
+import getGeneralLogic from '../src/index.js';
+import { termsOfIsEvenGame, getEvenLogic } from '../src/games/isEven.js';
 
-console.log(generalLogic(termsOfIsEvenGame, isEvenLogic));
+console.log(getGeneralLogic(termsOfIsEvenGame, getEvenLogic));
