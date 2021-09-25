@@ -1,25 +1,27 @@
-/* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
 
-const getGeneralLogic = (gameTerms, gameLogic) => {
+const getGeneralLogic = (gameTerms, getGameData) => {
   console.log('Welcome to the Brains Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(gameTerms);
 
-  const victoryMessage = `Congratulations, ${name}!`;
-
   const maxGamesRound = 3;
   for (let i = 0; i < maxGamesRound; i += 1) {
-    const [userAnswer, trueAnswer] = gameLogic();
+    const [question, answer] = getGameData();
 
-    const defeatMessage = `'${userAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'\nLet's try again, ${name}!`;
+    console.log(question);
 
-    const processState = (trueAnswer === userAnswer) ? console.log('Correct!') : 'Defeat!';
-    if (processState === 'Defeat!') {
-      return defeatMessage;
+    const userAnswer = readlineSync.question();
+
+    if (answer !== userAnswer) {
+      console.log(`${userAnswer} is wrong answer ;(. Correct was '${answer}'`);
+      console.log(`Let's try again, ${name}!`);
+      return;
     }
-  } return victoryMessage;
+    console.log('Correct!');
+  }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default getGeneralLogic;

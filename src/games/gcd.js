@@ -1,5 +1,3 @@
-import readlineSync from 'readline-sync';
-
 export const termsOfGcdGame = 'Find the greatest common divisor of given numbers.';
 
 export const getGcdLogic = () => {
@@ -18,14 +16,8 @@ export const getGcdLogic = () => {
     }
     return item1 + item2;
   };
-  const result = gcd(randomOperand1, randomOperand2);
+  const answer = gcd(randomOperand1, randomOperand2);
+  const question = `Question: ${randomOperand1} ${randomOperand2}`;
 
-  console.log(`Question: ${randomOperand1} ${randomOperand2}`);
-  const userAnswer = readlineSync.question();
-
-  const results = [];
-  results.push(userAnswer);
-  results.push(String(result));
-
-  return results;
+  return [question, String(answer)];
 };

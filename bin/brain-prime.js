@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import getGeneralLogic from '../src/index.js';
-import { termsOfPrimeGame, getPrimeLogic } from '../src/prime.js';
+import { termsOfPrimeGame, getPrimeLogic } from '../src/games/prime.js';
 
-console.log(getGeneralLogic(termsOfPrimeGame, getPrimeLogic));
+getGeneralLogic(termsOfPrimeGame, getPrimeLogic);
