@@ -5,7 +5,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/278b54b6d1e73f902124/maintainability)](https://codeclimate.com/github/CerberStrix/frontend-project-lvl1/maintainability)
 
-##Presentation of Brain-calc game.
+Presentation of Brain-calc game.
 
 [![asciicast](https://asciinema.org/a/436864.svg)](https://asciinema.org/a/436864)
 
