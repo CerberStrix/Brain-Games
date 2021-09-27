@@ -1,8 +1,4 @@
-![Без имени-1](https://user-images.githubusercontent.com/84579087/134874878-a8515ba2-e8ae-40d1-94cd-153c7ca543df.png)
-
-
-
-
+![Без имени-1](https://user-images.githubusercontent.com/84579087/134875029-2ca1ebc7-7feb-44f3-a56d-029ffaac7d64.png)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/CerberStrix/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/CerberStrix/frontend-project-lvl1/actions)
