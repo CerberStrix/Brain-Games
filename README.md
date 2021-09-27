@@ -1,4 +1,5 @@
-![Без имени-2](https://user-images.githubusercontent.com/84579087/134874096-a13bf44b-c03c-4bd4-8568-dcf806c0dc87.png)
+![Без имени-1](https://user-images.githubusercontent.com/84579087/134874878-a8515ba2-e8ae-40d1-94cd-153c7ca543df.png)
+
 
 
 
