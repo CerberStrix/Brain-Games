@@ -14,18 +14,18 @@
 
 [![asciicast](https://asciinema.org/a/436864.svg)](https://asciinema.org/a/436864)
 
-Presentation of Brain-even game.
+### **Presentation of Brain-even game.**
 
 [![asciicast](https://asciinema.org/a/RxLW5wWxMJMmZ7hVvAHU6nQMb.svg)](https://asciinema.org/a/RxLW5wWxMJMmZ7hVvAHU6nQMb)
 
-Presentation of Brain-gcd game.
+### **Presentation of Brain-gcd game.**
 
 [![asciicast](https://asciinema.org/a/to58FBJlMIG70bRjIh3HuhE8S.svg)](https://asciinema.org/a/to58FBJlMIG70bRjIh3HuhE8S)
 
-Presentation of Brain-prime game.
+### **Presentation of Brain-prime game.**
 
 [![asciicast](https://asciinema.org/a/9BBPmTIirYUtqU0yhb48OGGUU.svg)](https://asciinema.org/a/9BBPmTIirYUtqU0yhb48OGGUU)
 
-Presentation of Brain-progression game.
+### **Presentation of Brain-progression game.**
 
 [![asciicast](https://asciinema.org/a/vbNqRMu6C6moZA0HIXUPmPmH3.svg)](https://asciinema.org/a/vbNqRMu6C6moZA0HIXUPmPmH3)
