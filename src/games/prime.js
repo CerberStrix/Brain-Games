@@ -1,14 +1,14 @@
+import getGeneralLogic from '../index.js';
+import { getNumInTheRange, checkPrime } from '../utilits.js';
+
 export const termsOfPrimeGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export const getPrimeLogic = () => {
-  const randomNumber = Math.floor(Math.random() * 1000);
-  let answer = 'yes';
-  for (let j = 2; j <= randomNumber / 2; j += 1) {
-    if (randomNumber < 2 || randomNumber % j === 0) {
-      answer = 'no';
-    }
-  }
+  const randomNumber = getNumInTheRange(1000);
+  const answer = checkPrime(randomNumber);
   const question = `Question: ${randomNumber}`;
 
   return [question, answer];
 };
+
+export default () => getGeneralLogic(termsOfPrimeGame, getPrimeLogic);
