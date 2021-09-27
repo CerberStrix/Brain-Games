@@ -1,5 +1,5 @@
 import getGeneralLogic from '../index.js';
-import { getNumInTheRange, checkPrime } from '../utilits.js';
+import { getNumInTheRange, checkPrime } from '../utilites.js';
 
 export const termsOfPrimeGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

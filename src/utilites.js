@@ -1,3 +1,12 @@
+const getNumInTheRange = (defaultStep = 10) => Math.floor(Math.random() * defaultStep);
+
+const getRandomOperator = () => {
+  const operatorsColl = ['+', '-', '*'];
+  const opindex = getNumInTheRange(operatorsColl.length - 1);
+  const randomOperator = operatorsColl[opindex];
+  return randomOperator;
+};
+
 const calculate = (operand1, operator, operand2) => {
   let answer;
   switch (operator) {
@@ -13,15 +22,6 @@ const calculate = (operand1, operator, operand2) => {
     default:
   }
   return answer;
-};
-
-const getNumInTheRange = (defaultStep = 10) => Math.floor(Math.random() * defaultStep);
-
-const getRandomOperator = () => {
-  const operatorsColl = ['+', '-', '*'];
-  const opindex = getNumInTheRange(operatorsColl.length - 1);
-  const randomOperator = operatorsColl[opindex];
-  return randomOperator;
 };
 
 const getGcd = (a, b) => {

@@ -1,12 +1,12 @@
 import getGeneralLogic from '../index.js';
-import { getNumInTheRange } from '../utilits.js';
+import { getNumInTheRange } from '../utilites.js';
 
 export const termsOfProgressionGame = 'What number is missing in the progression?';
 
 export const getProgressionLogic = () => {
   const digitsColl = [];
   const progressionLength = getNumInTheRange(5) + 6;
-  const progressionStep = getNumInTheRange(10) + 1;
+  const progressionStep = getNumInTheRange() + 1;
   let startOfProgression = getNumInTheRange(100);
   for (let j = 0; j < progressionLength; j += 1) {
     digitsColl.push(startOfProgression);

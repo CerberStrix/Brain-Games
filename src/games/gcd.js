@@ -1,5 +1,5 @@
 import getGeneralLogic from '../index.js';
-import { getGcd, getNumInTheRange } from '../utilits.js';
+import { getGcd, getNumInTheRange } from '../utilites.js';
 
 export const termsOfGcdGame = 'Find the greatest common divisor of given numbers.';
 

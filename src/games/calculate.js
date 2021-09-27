@@ -1,5 +1,5 @@
 import getGeneralLogic from '../index.js';
-import { calculate, getNumInTheRange, getRandomOperator } from '../utilits.js';
+import { calculate, getNumInTheRange, getRandomOperator } from '../utilites.js';
 
 export const termsOfCalcGame = 'What is the result of the expression?';
 
