@@ -23,9 +23,8 @@ const getCalculate = (operand1, operand2, operator) => {
       answer = operand1 * operand2;
       return answer;
     default:
-      answer = `Error(operation ${operator} is not supported`;
-  }
-  return answer;
+      console.log(`Error(operation ${operator} is not supported`);
+  } return false;
 };
 
 export const getCalcLogic = () => {
