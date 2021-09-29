@@ -1,25 +1,20 @@
 import getGeneralLogic from '../index.js';
-import getNumInTheRange from '../secondaryFunctions.js';
+import { getRandomNumb } from '../secondaryFunctions.js';
 
 export const termsOfPrimeGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   for (let j = 2; j <= number / 2; j += 1) {
     if (number < 2 || number % j === 0) {
-      return false;
+      return 'no';
     }
-  } return true;
-};
-
-const checkPrime = (number) => {
-  const result = isPrime(number) ? 'yes' : 'no';
-  return result;
+  } return 'yes';
 };
 
 export const getPrimeLogic = () => {
-  const randomNumber = getNumInTheRange(1000);
-  const answer = checkPrime(randomNumber);
-  const question = `Question: ${randomNumber}`;
+  const randomNumber = getRandomNumb(1000);
+  const answer = isPrime(randomNumber);
+  const question = `${randomNumber}`;
 
   return [question, answer];
 };
