@@ -27,7 +27,7 @@ export const getProgressionLogic = () => {
 
   const progressionColl = getProgression(startOfProgression, progressionLength, progressionStep);
 
-  const randomIndex = getNumbInRange(progressionLength - 1);
+  const randomIndex = getNumbInRange(0, progressionLength - 1);
   const answer = progressionColl[randomIndex];
   const question = hideElementOfColl(progressionColl, randomIndex);
 
