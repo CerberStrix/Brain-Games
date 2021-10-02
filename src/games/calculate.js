@@ -5,7 +5,7 @@ export const termsOfCalcGame = 'What is the result of the expression?';
 
 const getRandomOperator = () => {
   const operatorsColl = ['+', '-', '*'];
-  const opindex = getNumbInRange(operatorsColl.length - 1);
+  const opindex = getNumbInRange(0, operatorsColl.length - 1);
   const randomOperator = operatorsColl[opindex];
   return randomOperator;
 };
