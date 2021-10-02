@@ -6,9 +6,9 @@ export const termsOfPrimeGame = 'Answer "yes" if given number is prime. Otherwis
 const isPrime = (number) => {
   for (let j = 2; j <= number / 2; j += 1) {
     if (number < 2 || number % j === 0) {
-      return true;
+      return false;
     }
-  } return false;
+  } return true;
 };
 
 export const getPrimeLogic = () => {
