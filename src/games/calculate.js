@@ -1,5 +1,5 @@
 import getGeneralLogic from '../index.js';
-import { getNumbInRange } from '../secondaryFunctions.js';
+import getNumbInRange from '../secondaryFunctions.js';
 
 export const termsOfCalcGame = 'What is the result of the expression?';
 

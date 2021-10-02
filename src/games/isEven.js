@@ -1,5 +1,5 @@
 import getGeneralLogic from '../index.js';
-import { getNumbInRange } from '../secondaryFunctions.js';
+import getNumbInRange from '../secondaryFunctions.js';
 
 export const termsOfIsEvenGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 

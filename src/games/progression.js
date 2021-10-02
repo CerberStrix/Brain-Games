@@ -1,5 +1,5 @@
 import getGeneralLogic from '../index.js';
-import { getNumbInRange } from '../secondaryFunctions.js';
+import getNumbInRange from '../secondaryFunctions.js';
 
 export const termsOfProgressionGame = 'What number is missing in the progression?';
 
