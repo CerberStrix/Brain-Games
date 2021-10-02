@@ -1,5 +1,5 @@
 import getGeneralLogic from '../index.js';
-import { getRandomNumb, getNumbInRange } from '../secondaryFunctions.js';
+import { getNumbInRange } from '../secondaryFunctions.js';
 
 export const termsOfProgressionGame = 'What number is missing in the progression?';
 
@@ -14,20 +14,20 @@ const getProgression = (startOfProgression, progressionLength, progressionStep) 
 };
 
 const hideElementOfColl = (coll, randomIndex) => {
-  const rawColl = coll;
-  rawColl[randomIndex] = '..';
-  const readyStringOfColl = rawColl.join(' ');
-  return readyStringOfColl;
+  const collToHide = coll;
+  collToHide[randomIndex] = '..';
+  const strWithHideElement = collToHide.join(' ');
+  return strWithHideElement;
 };
 
 export const getProgressionLogic = () => {
-  const startOfProgression = getRandomNumb();
+  const startOfProgression = getNumbInRange();
   const progressionLength = getNumbInRange(5, 10);
   const progressionStep = getNumbInRange(3, 12);
 
   const progressionColl = getProgression(startOfProgression, progressionLength, progressionStep);
 
-  const randomIndex = getRandomNumb(progressionLength - 1);
+  const randomIndex = getNumbInRange(progressionLength - 1);
   const answer = progressionColl[randomIndex];
   const question = hideElementOfColl(progressionColl, randomIndex);
 

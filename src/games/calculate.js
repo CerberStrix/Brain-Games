@@ -1,39 +1,35 @@
 import getGeneralLogic from '../index.js';
-import { getRandomNumb } from '../secondaryFunctions.js';
+import { getNumbInRange } from '../secondaryFunctions.js';
 
 export const termsOfCalcGame = 'What is the result of the expression?';
 
 const getRandomOperator = () => {
   const operatorsColl = ['+', '-', '*'];
-  const opindex = getRandomNumb(operatorsColl.length - 1);
+  const opindex = getNumbInRange(operatorsColl.length - 1);
   const randomOperator = operatorsColl[opindex];
   return randomOperator;
 };
 
-const getCalculate = (operand1, operand2, operator) => {
-  let answer;
+const calculate = (operand1, operand2, operator) => {
   switch (operator) {
     case '+':
-      answer = operand1 + operand2;
-      return answer;
+      return operand1 + operand2;
     case '-':
-      answer = operand1 - operand2;
-      return answer;
+      return operand1 - operand2;
     case '*':
-      answer = operand1 * operand2;
-      return answer;
+      return operand1 * operand2;
     default:
-      console.log(`Error(operation ${operator} is not supported`);
-  } return false;
+      throw new Error(`operation ${operator} is not supported`);
+  }
 };
 
 export const getCalcLogic = () => {
-  const randomOperand1 = getRandomNumb();
-  const randomOperand2 = getRandomNumb();
+  const randomOperand1 = getNumbInRange();
+  const randomOperand2 = getNumbInRange();
   const randomOperator = getRandomOperator();
 
   const question = `${randomOperand1} ${randomOperator} ${randomOperand2}`;
-  const answer = getCalculate(randomOperand1, randomOperand2, randomOperator);
+  const answer = calculate(randomOperand1, randomOperand2, randomOperator);
 
   return [question, String(answer)];
 };
