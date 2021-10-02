@@ -12,7 +12,7 @@ const isPrime = (number) => {
 };
 
 export const getPrimeLogic = () => {
-  const randomNumber = getNumbInRange(1000);
+  const randomNumber = getNumbInRange(0, 1000);
   const answer = isPrime(randomNumber) ? 'yes' : 'no';
   const question = `${randomNumber}`;
 
