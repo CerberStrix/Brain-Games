@@ -1,16 +1,16 @@
 import getGeneralLogic from '../index.js';
-import getNumbInRange from '../secondaryFunctions.js';
+import getNumbInRange from '../utils.js';
 
 export const termsOfProgressionGame = 'What number is missing in the progression?';
 
 const getProgression = (startOfProgression, progressionLength, progressionStep) => {
-  const coll = [];
+  const collection = [];
   let result = startOfProgression;
   for (let j = 0; j < progressionLength; j += 1) {
-    coll.push(result);
+    collection.push(result);
     result += progressionStep;
   }
-  return coll;
+  return collection;
 };
 
 const hideElementOfColl = (coll, randomIndex) => {

@@ -1,5 +1,5 @@
 import getGeneralLogic from '../index.js';
-import getNumbInRange from '../secondaryFunctions.js';
+import getNumbInRange from '../utils.js';
 
 export const termsOfPrimeGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -8,7 +8,8 @@ const isPrime = (number) => {
     if (number < 2 || number % j === 0) {
       return false;
     }
-  } return true;
+  }
+  return true;
 };
 
 export const getPrimeLogic = () => {
